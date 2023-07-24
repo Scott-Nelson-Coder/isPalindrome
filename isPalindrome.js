@@ -1,17 +1,23 @@
-let pal = "ooboo"
+// let pal = "ooboo"
 
-function isPal(str) {
-    let left = 0
-    let right = str.length -1
+// function isPal(str) {
+//     let left = 0
+//     let right = str.length -1
 
-    while(left < right) {
-        if(str[left] !== str[right]) {
-            return false
-        }
-        left ++
-        right --
-    }
-    return true
-}
+//     while(left < right) {
+//         if(str[left] !== str[right]) {
+//             return false
+//         }
+//         left ++
+//         right --
+//     }
+//     return true
+// }
 
-console.log(isPal(pal))
+// console.log(isPal(pal))
+
+let pal2 = "racecar"
+
+const isPalindrome = str => str === str.split("").reverse().join("")
+
+console.log(isPalindrome(pal2))
